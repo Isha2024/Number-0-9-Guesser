@@ -216,7 +216,7 @@ public class InteractiveDrawing {
             boolean drawing = true;
             double prevX = 0, prevY = 0;
             
-            // Drawing loop
+            
             while (drawing) {
                 if (StdDraw.isMousePressed()) {
                     double x = StdDraw.mouseX();
@@ -256,8 +256,7 @@ public class InteractiveDrawing {
 
                         }
                       
-                        System.out.println("Quitting and saving drawing...");
-                      //  StdDraw.save("drawing" + i + ".png");  // Save the drawing as a PNG
+                        
                         
                         
                        
@@ -281,7 +280,7 @@ public class InteractiveDrawing {
            
 
            if(answer.equals("y")){
-            System.out.println("Great! Click any key to play again! ");
+            System.out.println("Great! Click the enter key to play again! ");
             addimagepointstolist(comguess,points);
 
            }
@@ -290,7 +289,7 @@ public class InteractiveDrawing {
             String answer2 = scanner2.nextLine();
             int intans2=Integer.parseInt(answer2);
             addimagepointstolist(intans2,points);
-            System.out.print("Click any key so the guesser can try again!");
+            System.out.print("Click the enter key so the guesser can try again!");
            }
 
            //ask it to select
